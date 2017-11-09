@@ -4,7 +4,7 @@
 <head>
     <title>Friend Finder</title>
     <!--Link to Favicon-->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="foodie.ico" type="image/x-icon">
     <!-- Viewport setting -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome Link -->
@@ -24,31 +24,82 @@
 </head>
 
 <body>
-    <main>
-      <div>
-      </div>
-
-
-    </main>
-    <footer class="page-footer center-align green darken-3">
-        <div class="container">
+<main>
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/parallax1.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
             <div class="row">
-                    <div class="container copy">
-                        © 2017 <span id="signature">Valarie Regas</span>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input placeholder="First Name" id="first_name" type="text">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">camera</i>
+                            <input placeholder="img link" id="img_link" type="text">
+                            <label for="img_link">Please provide a link to your photo</label>
+                        </div>
                     </div>
+                </form>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <h5>I prefer SALTY to Sweet</h5>
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected></option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <h5>Eating steak "well"done is repugnant.</h5>
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected></option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/parallax1.jpg"></div>
+    </div>
+
+
+</main>
+<footer class="page-footer center-align green darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="container copy">
+                © 2017 <span id="signature">Valarie Regas</span>
             </div>
         </div>
-    </footer>
-    <script type="text/javascript" src="assets/javascript/personal.js"></script>
-    <script>
+    </div>
+</footer>
+<script type="text/javascript" src="assets/javascript/personal.js"></script>
+<script>
 
-      $(document).ready(function() {
+    $(document).ready(function () {
         $('select').material_select();
-        });
+        $('.parallax').parallax();
+        $('select').material_select();
+    });
 
 
-
-    </script>
+</script>
 </body>
 
 </html>
