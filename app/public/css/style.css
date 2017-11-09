@@ -18,5 +18,9 @@ main {
 }
 
 .parallax-container {
-    height: "100px";
+    height: 100px;
+}
+
+a {
+    color: white;
 }
