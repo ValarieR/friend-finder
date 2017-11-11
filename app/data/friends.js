@@ -14,7 +14,7 @@ var friends = [
         scores: [4,4,5,3,5,1,5,4,4,3]
     }, {
         name: "Sylar",
-        img: "https://www.facebook.com/profile.php?id=100001488911504"
+        img: "https://www.facebook.com/profile.php?id=100001488911504",
         scores: [1,2,4,5,3,1,5,2,3,3]
     }
   ];
