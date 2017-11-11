@@ -18,9 +18,4 @@
     "url": "https://github.com/ValarieR/friend-finder/issues"
   },
   "homepage": "https://github.com/ValarieR/friend-finder#readme"
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "path": "^0.12.7"
-  }
 }
