@@ -7,8 +7,6 @@
     <link rel="icon" href="foodie.ico" type="image/x-icon">
     <!-- Viewport setting -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome Link -->
-    <script src="https://use.fontawesome.com/f59413c927.js"></script>
     <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
     <!-- Link to Materialize Icons -->
@@ -36,28 +34,29 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="material-icons prefix">account_circle</i>
-                            <input placeholder="First Name" id="first_name" type="text">
-                            <label for="first_name">First Name</label>
+                            <input placeholder="First Name" id="name" type="text" class="form-control">
+                            <label for="name">First Name</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">camera</i>
-                            <input placeholder="img link" id="img_link" type="text">
-                            <label for="img_link">Please provide a link to your photo</label>
+                            <input placeholder="img link" id="img" type="text" class="form-control">
+                            <label for="img">Please provide a link to your photo</label>
                         </div>
                     </div>
                 </form>
             </div>
             <!--begin survey questions -->
             <ul class="collapsible popout" data-collapsible="accordion">
+                <!-- Q1 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> I prefer Salty
-                            to Sweet.</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> I prefer Salty
+                            to Sweet.</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q1">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -70,14 +69,15 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q2 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> Pineapple is a delightful pizza topping.</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> Pineapple is a delightful pizza topping.</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q2">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -90,14 +90,15 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q3 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> Bacon fills my soul with glee.</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> Bacon fills my soul with glee.</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q3">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -110,15 +111,16 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q4 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> Doughnuts are a reasonable choice as a
-                        complete breakfast.</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> Doughnuts are a reasonable choice as a
+                        complete breakfast.</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q4">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -131,15 +133,16 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q5 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> Eating steak "well-done" is repugnant, and a
-                        crime against nature.</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> Eating steak "well-done" is repugnant, and a
+                        crime against nature.</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q5">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -152,16 +155,17 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q6 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> It is worth it to have to eat Ramen for a
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> It is worth it to have to eat Ramen for a
                         week if going to an exciting, yet expensive, restaurant uses up my entire grocery
-                        budget.</h5>
+                        budget.</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q6">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -174,14 +178,15 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q7 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> Cake > Sex</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> Cake > Sex</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q7">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -194,15 +199,16 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q8 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> Give me MEAT! We didn't claw our way up the
-                        food chain to eat salad!</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> Give me MEAT! We didn't claw our way up the
+                        food chain to eat salad!</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q8">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -215,14 +221,15 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q9 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> I live each day in search of umami.</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> I live each day in search of umami.</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q9">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -235,15 +242,16 @@
                         </form>
                     </div>
                 </li>
+                <!-- Q10 -->
                 <li>
-                    <div class="collapsible-header"><h5><i class="material-icons prefix">star</i> Putine is one of my favorite foods, and I
-                        praise the French for their culinary savvy.</h5>
+                    <div class="collapsible-header"><p><i class="material-icons prefix">star</i> Putine is one of my favorite foods, and I
+                        praise the French for their culinary savvy.</p>
                     </div>
                     <div class="collapsible-body">
                         <form>
                             <span>
                                 <div class="input-field">
-                                    <select>
+                                    <select class="chosen" id="q10">
                                         <option value="" disabled selected>Click to select answer</option>
                                         <option value="1">STRONGLY DISAGREE</option>
                                         <option value="2">Somewhat Disagree</option>
@@ -257,12 +265,33 @@
                     </div>
                 </li>
             </ul>
+            <div class="row center">
+                <div class="col s12">
+                    <button id="submitInfo" class="btn red darken-4" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
+
+
 
     <div class="parallax-container">
-        <div class="parallax"><img src="css/images/parallax2.jpg"></div>
+        <div class="parallax"><img src="css/images/parallax1.jpeg"></div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+            <h4>Meet your new Foodie Friend!</h4>
+            <h2 id="matchName"></h2>
+            <img id="matchImg" src="">
+        </div>
+        <div class="modal-footer">
+            <!--<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>-->
+        </div>
     </div>
 
 
@@ -276,6 +305,7 @@
         </div>
     </div>
 </footer>
+
 <script type="text/javascript" src="survey.js"></script>
 
 </body>
