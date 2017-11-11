@@ -20,6 +20,10 @@ var friends = [
         name: "Elizabeth",
         img: "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/29988_429259017151_5145402_n.jpg?oh=4a8d932b1abdec86b478e81d18f2ffe7&oe=5AAC68CE",
         scores: [4,5,4,2,4,5,1,3,4,4]
+    }, {
+        name: "Carol",
+        img: "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11221469_10101014982324548_5801170829447241285_n.jpg?oh=765e41b8f18bc8d7f5650fa7cded9b12&oe=5AA7448B",
+        scores: [5,3,4,1,4,2,1,3,4,4]
     }
   ];
 
