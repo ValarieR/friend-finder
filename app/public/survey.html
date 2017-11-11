@@ -298,8 +298,8 @@
 <div id="modal1" class="modal">
     <!-- modal content -->
     <div class="modal-content">
-        <h4>Meet your new Foodie Friend!</h4>
-        <h2 id="matchName"></h2>
+        <p>Meet your new Foodie Friend!</p>
+        <h4 id="matchName"></h4>
         <img id="matchImg" src="">
     </div>
     <div class="modal-footer">
@@ -307,7 +307,7 @@
     </div>
 </div>
 
-<!--<script type="text/javascript" src="survey.js"></script>-->
+
 <script>
     $(document).ready(function () {
 
@@ -345,13 +345,13 @@
                 $('.form-control').each(function () {
                     if ( $(this).val() === '')
                         valid = false;
-                    alert("Please complete the form to continue.")
+
                 });
 
                 $('select').each(function () {
                     if ($(this).val() !== '') {
                     } else valid = false;
-                    alert("Please select a level of agreement for each statement.")
+
                 });
                 return valid;
             }
@@ -380,15 +380,16 @@
 
                         $("#matchName").text(data.name);
                         $("#matchImg").attr("src", data.img);
+                        $("#matchImg").attr("class", "responsive-img");
 
                         // activate the modal with best match
                         $("#modal1").modal('open');
 
-                        if (data) {
-                            console.log("new friend added")
-                        } else {
-                            console.log("new friend NOT added")
-                        }
+//                        if (data) {
+//                            console.log("new friend added")
+//                        } else {
+//                            console.log("new friend NOT added")
+//                        }
                     });
                 }
 
