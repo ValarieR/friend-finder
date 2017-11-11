@@ -301,12 +301,12 @@
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
     <!-- modal content -->
-    <div class="container">
-        <div class="modal-content">
-            <span>
+    <div class="modal-content">
+        <div class="container">
+            <div class="row">
                 <h5>Meet your new Foodie Friend!</h5>
                 <h4 id="matchName"></h4>
-            </span>
+            </div>
             <img id="matchImg" src="">
         </div>
     </div>
@@ -388,7 +388,7 @@
 
                         $("#matchName").text(data.name);
                         $("#matchImg").attr("src", data.img);
-                        $("#matchImg").addClass("responsive-img");
+                        $("#matchImg").addClass("responsive-img circle");
 
                         // activate the modal with best match
                         $("#modal1").modal('open');
